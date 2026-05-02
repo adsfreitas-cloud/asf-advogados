@@ -220,6 +220,13 @@ body {
           animation: float 3s ease-in-out infinite;
 }
 
+.whatsapp-button::before {
+          content: '\1F4F1';
+          font-size: 32px;
+          display: block;
+}
+}
+
 @keyframes float {
           0%, 100% {
                         transform: translateY(0px);
