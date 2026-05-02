@@ -192,3 +192,133 @@ body {
               grid-template-columns: 1fr;
     }
 }
+
+
+/* ============================================= */
+/* BOTÃO WHATSAPP FLUTUANTE - VERSÃO MELHORADA */
+/* ============================================= */
+
+.whatsapp-button {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+          color: white;
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4),
+                                0 8px 24px rgba(37, 211, 102, 0.2);
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+          z-index: 999;
+          border: none;
+          cursor: pointer;
+          animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+          0%, 100% {
+                        transform: translateY(0px);
+          }
+          50% {
+                        transform: translateY(-15px);
+          }
+}
+
+.whatsapp-button:hover {
+          background: linear-gradient(135deg, #20ba5a 0%, #1da94b 100%);
+          box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5),
+                                0 12px 32px rgba(37, 211, 102, 0.3);
+          transform: scale(1.15) !important;
+}
+
+.whatsapp-button:active {
+          transform: scale(0.95);
+}
+
+.whatsapp-icon {
+          width: 36px;
+          height: 36px;
+          fill: currentColor;
+          animation: pulse 2s ease-in-out infinite;
+}
+
+.whatsapp-button:hover .whatsapp-icon {
+          animation: none;
+}
+
+@keyframes pulse {
+          0%, 100% {
+                        opacity: 1;
+          }
+          50% {
+                        opacity: 0.8;
+          }
+}
+
+/* RESPONSIVO - TABLET */
+@media (max-width: 1024px) {
+          .whatsapp-button {
+                        width: 60px;
+                        height: 60px;
+                        bottom: 25px;
+                        right: 25px;
+          }
+
+    .whatsapp-icon {
+                  width: 32px;
+                  height: 32px;
+    }
+}
+
+/* RESPONSIVO - CELULAR */
+@media (max-width: 768px) {
+          .whatsapp-button {
+                        width: 56px;
+                        height: 56px;
+                        bottom: 20px;
+                        right: 20px;
+                        box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3),
+                                                  0 4px 16px rgba(37, 211, 102, 0.15);
+          }
+
+    .whatsapp-icon {
+                  width: 28px;
+                  height: 28px;
+    }
+
+    @keyframes float {
+                  0%, 100% {
+                                    transform: translateY(0px);
+                  }
+                  50% {
+                                    transform: translateY(-10px);
+                  }
+    }
+}
+
+/* RESPONSIVO - CELULAR PEQUENO */
+@media (max-width: 480px) {
+          .whatsapp-button {
+                        width: 50px;
+                        height: 50px;
+                        bottom: 15px;
+                        right: 15px;
+          }
+
+    .whatsapp-icon {
+                  width: 24px;
+                  height: 24px;
+    }
+}
+
+/* Garantir que o botão sempre fica visível acima de outros elementos */
+@media print {
+          .whatsapp-button {
+                        display: none;
+          }
+}
