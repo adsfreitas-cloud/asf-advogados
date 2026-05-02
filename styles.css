@@ -1,0 +1,194 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+}
+
+.container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+      background-color: #1a3a52;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+}
+
+.nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+}
+
+.nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+}
+
+.nav-links a:hover {
+      color: #64b5f6;
+}
+
+/* Hero Section */
+.hero {
+      background: linear-gradient(135deg, #1a3a52 0%, #2c5aa0 100%);
+      color: white;
+      padding: 6rem 0;
+      text-align: center;
+}
+
+.hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+}
+
+.hero-content p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+}
+
+.btn-primary {
+      background-color: #ff6b6b;
+      color: white;
+}
+
+.btn-primary:hover {
+      background-color: #ee5a52;
+      transform: translateY(-2px);
+}
+
+/* Servicos */
+.servicos {
+      padding: 4rem 0;
+      background-color: #f5f5f5;
+}
+
+.servicos h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      color: #1a3a52;
+}
+
+.servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+}
+
+.servico-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+}
+
+.servico-card:hover {
+      transform: translateY(-5px);
+}
+
+.servico-card h3 {
+      color: #1a3a52;
+      margin-bottom: 1rem;
+}
+
+/* Sobre */
+.sobre {
+      padding: 4rem 0;
+      text-align: center;
+}
+
+.sobre h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1a3a52;
+}
+
+.sobre p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #666;
+}
+
+/* Contato */
+.contato {
+      padding: 4rem 0;
+      background-color: #1a3a52;
+      color: white;
+      text-align: center;
+}
+
+.contato h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+}
+
+.contact-info {
+      margin-top: 2rem;
+}
+
+.contact-info p {
+      margin: 0.5rem 0;
+}
+
+/* Footer */
+.footer {
+      background-color: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+      .nav-links {
+                gap: 1rem;
+      }
+
+    .hero-content h1 {
+              font-size: 2rem;
+    }
+
+    .servicos-grid {
+              grid-template-columns: 1fr;
+    }
+}
