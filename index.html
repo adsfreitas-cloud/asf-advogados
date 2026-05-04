@@ -1,15 +1,15 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-    </head>
+    <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <</title>ASF Advogados - Soluções Jurídicas Profissionais</</title>
-        </style>
+            <title>ASF Advogados - Soluções Jurídicas Profissionais</title>
+        <style>
                     * {
                                     margin: 0;
                                     padding: 0;
                                     box-sizing: border-box;
-                    }h
+                    }
 
                     body {
                                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,6 +17,7 @@ h<!DOCTYPE html>
                                     color: #333;
                     }
 
+                    /* Cores principais inspiradas no Grupo VIDAL & MENDES */
                     :root {
                                     --cor-primaria: #1a1a2e;
                                     --cor-secundaria: #7f3a3a;
@@ -26,6 +27,7 @@ h<!DOCTYPE html>
                                     --cor-texto-claro: #fff;
                     }
 
+                    /* Header/Navbar */
                     nav.navbar {
                                     background-color: var(--cor-primaria);
                                     padding: 1rem 0;
@@ -74,8 +76,10 @@ h<!DOCTYPE html>
                                     border-bottom-color: var(--cor-destaque);
                     }
 
+                    /* Hero Section com Imagem */
                     .hero {
-                                    background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(127, 58, 58, 0.85) 100%), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=600&fit=crop') center/cover;
+                                    background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(127, 58, 58, 0.85) 100%), 
+                                                                url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=600&fit=crop') center/cover;
                                     color: var(--cor-texto-claro);
                                     padding: 6rem 0;
                                     text-align: center;
@@ -104,6 +108,7 @@ h<!DOCTYPE html>
                                     color: rgba(255,255,255,0.95);
                     }
 
+                    /* Botões */
                     .btn {
                                     display: inline-block;
                                     padding: 0.8rem 2rem;
@@ -133,6 +138,7 @@ h<!DOCTYPE html>
                                     color: var(--cor-destaque);
                     }
 
+                    /* Seções */
                     section {
                                     padding: 4rem 0;
                     }
@@ -157,6 +163,7 @@ h<!DOCTYPE html>
                                     background-color: var(--cor-destaque);
                     }
 
+                    /* Serviços */
                     #servicos {
                                     background-color: var(--cor-fundo);
                     }
@@ -193,6 +200,7 @@ h<!DOCTYPE html>
                                     line-height: 1.6;
                     }
 
+                    /* Sobre */
                     #sobre {
                                     background: white;
                     }
@@ -227,6 +235,7 @@ h<!DOCTYPE html>
                                     color: var(--cor-texto);
                     }
 
+                    /* Agendamento */
                     #agenda {
                                     background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
                                     color: white;
@@ -271,6 +280,7 @@ h<!DOCTYPE html>
                                     width: 100%;
                     }
 
+                    /* Contato */
                     #contato {
                                     background-color: var(--cor-fundo);
                     }
@@ -297,6 +307,7 @@ h<!DOCTYPE html>
                                     font-weight: 600;
                     }
 
+                    /* Footer */
                     footer {
                                     background-color: var(--cor-primaria);
                                     color: white;
@@ -309,22 +320,27 @@ h<!DOCTYPE html>
                                     font-size: 0.95rem;
                     }
 
+                    /* Responsive */
                     @media (max-width: 768px) {
                                     .nav-links {
                                                         gap: 1rem;
                                                         font-size: 0.85rem;
                                     }
+
                                     .hero-content h1 {
                                                         font-size: 2rem;
                                     }
+
                                     .sobre-content {
                                                         grid-template-columns: 1fr;
                                     }
+
                                     section h2 {
                                                         font-size: 1.8rem;
                                     }
                     }
 
+                    /* WhatsApp Button */
                     .whatsapp-btn {
                                     position: fixed;
                                     bottom: 2rem;
@@ -334,6 +350,10 @@ h<!DOCTYPE html>
                                     border-radius: 50%;
                                     width: 60px;
                                     height: 60px;
+                        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.006c-1.444 0-2.845-.356-4.083-1.031L3.064 3.051 4.146 6.945c-.713 1.231-1.089 2.645-1.089 4.09 0 3.973 3.215 7.188 7.172 7.188 1.922 0 3.731-.774 5.082-2.148 1.35-1.373 2.129-3.188 2.129-5.040 0-3.973-3.215-7.188-7.172-7.188zm5.982 11.614c-1.28 2.214-3.885 3.604-6.82 3.604-.5 0-.987-.05-1.455-.144l-1.44.931 1.213-4.063c-.713-1.231-1.089-2.645-1.089-4.09 0-3.973 3.215-7.188 7.172-7.188.915 0 1.794.16 2.621.472 1.793.709 3.375 2.001 4.374 3.7.999 1.699 1.55 3.627 1.55 5.655 0 2.027-.551 3.954-1.55 5.653z"/></svg>');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 45%;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
@@ -348,64 +368,35 @@ h<!DOCTYPE html>
                                     background-color: #1faa4f;
                                     transform: scale(1.1);
                     }
-
-                    .card-section {
-                                    background: white;
-                                    padding: 2rem;
-                                    margin-bottom: 2rem;
-                                    border-left: 4px solid var(--cor-secundaria);
-                                    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-                    }
-
-                    .card-section h3 {
-                                    color: var(--cor-secundaria);
-                                    margin-bottom: 1rem;
-                                    font-size: 1.3rem;
-                    }
-
-                    .card-section p {
-                                    margin-bottom: 1rem;
-                                    line-height: 1.8;
-                    }
-
-                    .card-section ul {
-                                    margin-left: 2rem;
-                                    margin-bottom: 1rem;
-                                    line-height: 1.8;
-                    }
-
-                    .card-section li {
-                                    margin-bottom: 0.5rem;
-                    }
-                </</style>
-    </</head>
-    <</body>
+                </style>
+    </head>
+    <body>
             <!-- Navbar -->
             <nav class="navbar">
                         <div class="container">
-                                        <div class="logo">ASF ADVOGADOS</</div></div>
+                                        <div class="logo">ASF ADVOGADOS</div>div>
                                         <ul class="nav-links">
-                                                            <</li><a href="#home">Home</</a></a></</li>
-                                                        <</li><a href="#servicos">Serviços</</a></a></</li>
-                                                        <</li><a href="#sobre">Sobre</</a></a></</li>
-                                                        <</li><a href="#agenda">Agenda</</a></a></</li>
-                                                        <</li><a href="#contato">Contato</</a></a></</li>
-                                        </</ul></ul>
-                        </</div></div>
-            </</nav></nav>
+                                                            <li><a href="#home">Home</a>a></li>
+                                                        <li><a href="#servicos">Serviços</a>a></li>
+                                                        <li><a href="#sobre">Sobre</a>a></li>
+                                                        <li><a href="#agenda">Agenda</a>a></li>
+                                                        <li><a href="#contato">Contato</a>a></li>
+                                        </ul>ul>
+                        </div>div>
+            </nav>nav>
     
         <!-- Hero Section -->
         <section class="hero" id="home">
                 <div class="container">
                             <div class="hero-content">
                                             <h1>Soluções Jurídicas Profissionais</h1>
-                                            <p class="hero-subtitle">Experiência, dedicação e excelência ao seu serviço</</p></p>
-                                            <p class="hero-description">Atuamos em todo Brasil - Remoto e Presencial em São Paulo</</p></p>
-                                            <a href="#agenda" class="btn btn-primary">Agende sua Consulta</</a></a>
-                                            <img src="https://images.pexels.com/photos/6077983/pexels-photo-6077983.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Aperto de mãos profissional em reunião de negócios" style="max-width: 100%; height: auto; margin-top: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-                            </</div></div>
-                </</div></div>
-        </</section></section>
+                                            <p class="hero-subtitle">Experiência, dedicação e excelência ao seu serviço</p>p>
+                                            <p class="hero-description">Atuamos em todo Brasil - Remoto e Presencial em São Paulo</p>p>
+                                            <a href="#agenda" class="btn btn-primary">Agende sua Consulta</a>a>
+                                                <img src="https://images.pexels.com/photos/6077983/pexels-photo-6077983.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Aperto de mãos profissional em reunião de negócios" style="max-width: 100%; height: auto; margin-top: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+                            </div>div>
+                </div>div>
+        </section>section>
     
         <!-- Serviços -->
         <section id="servicos">
@@ -414,170 +405,272 @@ h<!DOCTYPE html>
                             <div class="service-grid">
                                             <div class="service-card">
                                                                 <h3>📋 Direito Civil</h3>
-                                                                <</p>Consultoria e representação em questões civis, contratos e responsabilidade civil.</</p>
-                                            </</div></div>
+                                                                <p>Consultoria e representação em questões civis, contratos e responsabilidade civil.</p>
+                                            </div>div>
                                             <div class="service-card">
                                                                 <h3>⚖️ Direito Comercial</h3>
-                                                                <</p>Assessoria empresarial, fusões, aquisições e consultoria societária.</</p>
-                                            </</div></div>
+                                                                <p>Assessoria empresarial, fusões, aquisições e consultoria societária.</p>
+                                            </div>div>
                                             <div class="service-card">
                                                                 <h3>👨‍⚖️ Direito Trabalhista</h3>
-                                                                <</p>Defesa de direitos trabalhistas e consultoria empresarial na área trabalhista.</</p>
-                                            </</div></div>
+                                                                <p>Defesa de direitos trabalhistas e consultoria empresarial na área trabalhista.</p>
+                                            </div>div>
                                             <div class="service-card">
                                                                 <h3>🏠 Direito Imobiliário</h3>
-                                                                <</p>Negociação, compra, venda e aluguel de imóveis com total segurança jurídica.</</p>
-                                            </</div></div>
-                                            <div class="service-card">
-                                                                <h3>👨‍👩‍👧‍👦 Direito de Família</h3>
-                                                                <</p>Pensão alimentícia, divisão de bens, e consultoria em direito de família.</</p>
-                                            </</div></div>
-                            </</div></div>
-                </</div></div>
-        </</section></section>
+                                                                <p>Negociação, compra, venda e aluguel de imóveis com total segurança jurídica.</p>
+                                            </div>div>
+                                        <div class="service-card">
+                                                      <h3>👨‍👩‍👧‍👦 Direito de Fam\u00edlia</h3>
+                                                  <p>Pensão alimentícia, divisão de bens, e consultoria em direito de família.</p>
+                                        </div></p></h3>
+                            </div>div>
+                </div>div>
+        </section>section>
     
-        <!-- Direito de Saúde -->
-        <section id="saude">
-                <div class="container">
-                            <h2>🏥 Direito de Saúde</h2>
-                            
-                            <div class="card-section">
-                                            <h3>Home Care e Cobertura de Serviços Domiciliares</h3>
-                                            <</p>A negativa ou restrição de cobertura de home care é uma das principais violações aos direitos do paciente. Quando o plano de saúde recusa autorizar assistência domiciliar — mesmo com prescrição médica adequada — o paciente fica desprotegido em momento crítico de sua recuperação.</</p>
-                                            <</p><</strong>Atuamos na defesa integral de pacientes e seus familiares que enfrentam recusas infundadas de home care, incluindo:</</strong></</p>
-                                            <</ul>
-                                                                    <</li>Negativa de autorização para assistência de enfermagem domiciliar</</li>
-                                                                <</li>Restrição de dias ou horários de atendimento</</li>
-                                                                <</li>Recusa de cobertura de insumos e materiais necessários (equipamentos, medicações, curativos)</</li>
-                                                                <</li>Interrupção abrupta de serviços sem justificativa clínica adequada</</li>
-                                            </</ul>
-                            </</div></div>
-                
-                            <div class="card-section">
-                                            <h3>Cobertura de Serviços Hospitalares</h3>
-                                            <</p>Orientação especializada sobre direitos relacionados a cobertura hospitalar, procedimentos e tratamentos.</</p>
-                                            <</ul>
-                                                                <</li>Defesa de direitos de cobertura hospitalar</</li>
-                                                                <</li>Negociação com operadores de saúde</</li>
-                                                                <</li>Suporte em negações de cobertura</</li>
-                                            </</ul>
-                            </</div></div>
-                
-                            <div class="card-section">
-                                            <</p>Nossa estratégia combina ação judicial rápida (liminares em ações civis) com defesa administrativa (reclamações na ANVISA, ANS e órgãos de defesa do consumidor), garantindo acesso imediato ao cuidado necessário.</</p>
-                            </</div></div>
-                
-                            <div class="card-section">
-                                            <h3>Conflitos com Planos de Saúde</h3>
-                                            <</p>Negativas de cobertura, exclusões indevidas, valores abusivos e procedimentos não autorizados são rotina nos conflitos entre pacientes e operadoras de saúde. Direitos são sistematicamente violados.</</p>
-                                            <</p><</strong>Defendemos nossos clientes em:</</strong></</p>
-                                            <</ul>
-                                                                <</li>Negativa de cobertura de procedimentos, medicações e terapias prescritos por médico</</li>
-                                                                <</li>Exclusões ilegítimas (cláusulas abusivas que violam direitos básicos)</</li>
-                                                                <</li>Reembolsos inadequados por despesas de saúde</</li>
-                                                                <</li>Reajustes abusivos de mensalidades</</li>
-                                                                <</li>Carências indevidas aplicadas em situações de emergência</</li>
-                                                                <</li>Cobertura deficiente de tratamentos oncológicos, neurológicos e outras condições crônicas</</li>
-                                            </</ul>
-                                            <</p>Trabalhamos com ações judiciais que combinam indenizações por danos morais com obrigação de cobertura imediata — e frequentemente obtemos liminares que garantem o acesso ao tratamento enquanto o processo tramita.</</p>
-                            </</div></div>
-                
-                            <div class="card-section">
-                                            <h3>Ações contra Estado e Municípios — Direito à Saúde</h3>
-                                            <</p>Quando o Estado ou Município falham em garantir medicações, procedimentos cirúrgicos, internações, transplantes ou qualquer tratamento essencial à saúde, há responsabilidade civil objetiva — e o paciente tem direito a ser reparado.</</p>
-                                            <</p><</strong>Especializamo-nos em demandas contra:</</strong></</p>
-                                            <</ul>
-                                                                <</li>Secretarias de Saúde (negativa de medicações de alto custo, atraso em procedimentos cirúrgicos)</</li>
-                                                                <</li>SUS (demora injustificada em filas, falta de disponibilidade de leitos)</</li>
-                                                                <</li>Municípios (fechamento de UPA, redução de serviços de saúde, descumprimento de protocolo)</</li>
-                                                                <</li>Políticas públicas deficientes que afetam acesso a tratamento</</li>
-                                            </</ul>
-                                            <</p>Além de ações de obrigação de fazer (garantir o acesso), promovemos indenizações por danos morais decorrentes do sofrimento causado pela negativa estatal.</</p>
-                            </</div></div>
-                </</div></div>
-        </</section></section>
-    
+
+         <!-- Direito de Saúde -->
+         <section id="saude">
+               <div class="container">
+                      <h2>🏥 Direito de Saúde</h2>
+                  
+                  <!-- Home Care -->
+                  <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                      <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Home Care e Cobertura de Serviços Domiciliares</h3>
+                      <p style="margin-bottom: 1rem; line-height: 1.8;">A negativa ou restrição de cobertura de home care é uma das principais violações aos direitos do paciente. Quando o plano de saúde recusa autorizar assistência domiciliar — mesmo com prescrição médica adequada — o paciente fica desprotegido em momento crítico de sua recuperação.</p>p>
+                      <p style="margin-bottom: 1rem; font-weight: 600;">Atuamos na defesa integral de pacientes e seus Famíliares que enfrentam recusas infundadas de home care, incluindo:</p>p>
+                      <ul style="margin-left: 2rem; margin-bottom: 1rem; line-height: 1.8;">
+                           <li>Negativa de autorização para assistência de enfermagem domiciliar</li>
+                           <li>Restrição de dias ou horários de atendimento</li>
+                           <li>Recusa de cobertura de insumos e materiais necessários (equipamentos, medicações, curativos)</li>
+                           <li>Interrupção abrupta de serviços sem justificativa clínica adequada</li>
+                      </ul>ul>
+
+                                      <!-- Cobertura de Servi\u00e7os Hospitalares -->
+                                      <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--cor-secundaria);">
+                                                              <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Cobertura de Servi\u00e7os Hospitalares</h3>h3>
+                                                              <p style="margin-bottom: 1rem; line-height: 1.8;">Orienta\u00e7\u00e3o especializada sobre direitos relacionados a cobertura hospitalar, procedimentos e tratamentos.</p>p>
+                                                              <ul style="margin-left: 2rem; margin-bottom: 1rem; line-height: 1.8;">
+                                                                                          <li>Defesa de direitos de cobertura hospitalar</li>
+                                                                                      <li>Negocia\u00e7\u00e3o com operadores de sa\u00fade</li>
+                                                                                      <li>Suporte em nega\u00e7\u00f5es de cobertura</li>
+                                                              </ul>ul>
+                                      </div>div></li></li>
+                      <p style="margin-bottom: 1rem; line-height: 1.8;">Nossa estratégia combina ação judicial rápida (liminares em ações civis) com defesa administrativa (reclamações na ANVISA, ANS e órgãos de defesa do consumidor), garantindo acesso imediato ao cuidado necessário.</p>p>
+                  </div>div>
+                  
+                  <!-- Conflitos com Planos de Saúde -->
+                  <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                      <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Conflitos com Planos de Saúde</h3>
+                      <p style="margin-bottom: 1rem; line-height: 1.8;">Negativas de cobertura, exclusões indevidas, valores abusivos e procedimentos não autorizados são rotina nos conflitos entre pacientes e operadoras de saúde. Direitos são sistematicamente violados.</p>p>
+                      <p style="margin-bottom: 1rem; font-weight: 600;">Defendemos nossos clientes em:</p>p>
+                      <ul style="margin-left: 2rem; margin-bottom: 1rem; line-height: 1.8;">
+                           <li>Negativa de cobertura de procedimentos, medicações e terapias prescritos por médico</li>
+                           <li>Exclusões ilegítimas (cláusulas abusivas que violam direitos básicos)</li>
+                           <li>Reembolsos inadequados por despesas de saúde</li>
+                           <li>Reajustes abusivos de mensalidades</li>
+                           <li>Carências indevidas aplicadas em situações de emergência</li>
+                           <li>Cobertura deficiente de tratamentos oncológicos, neurológicos e outras condições crônicas</li>
+                      </ul>ul>
+                      <p style="margin-bottom: 1rem; line-height: 1.8;">Trabalhamos com ações judiciais que combinam indenizações por danos morais com obrigação de cobertura imediata — e frequentemente obtemos liminares que garantem o acesso ao tratamento enquanto o processo tramita.</p>p>
+                  </div>div>
+                  
+                  <!-- Ações contra Estado e Municípios -->
+                  <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                      <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Ações contra Estado e Municípios — Direito à Saúde</h3>
+                      <p style="margin-bottom: 1rem; line-height: 1.8;">Quando o Estado ou Município falham em garantir medicações, procedimentos cirurgicos, internações, transplantes ou qualquer tratamento essencial à saúde, há responsabilidade civil objetiva — e o paciente tem direito a ser reparado.</p>p>
+                      <p style="margin-bottom: 1rem; font-weight: 600;">Especializamo-nos em demandas contra:</p>p>
+                      <ul style="margin-left: 2rem; margin-bottom: 1rem; line-height: 1.8;">
+                           <li>Secretarias de Saúde (negativa de medicações de alto custo, atraso em procedimentos cirurgicos)</li>
+                           <li>SUS (demora injustificada em filas, falta de disponibilidade de leitos)</li>
+                           <li>Municípios (fechamento de UPA, redução de serviços de saúde, descumprimento de protocolo)</li>
+                           <li>Políticas públicas deficientes que afetam acesso a tratamento</li>
+                      </ul>ul>
+                      <p style="margin-bottom: 1rem; line-height: 1.8;">Além de ações de obrigação de fazer (garantir o acesso), promovemos indenizações por danos morais decorrentes do sofrimento causado pela negativa estatal.</p>p>
+                  </div>div>
+                  
+                  <!-- Metodologia -->
+                  <div style="background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%); color: white; padding: 2rem; margin-bottom: 2rem; border-radius: 8px;">
+                      <h3 style="margin-bottom: 1.5rem; font-size: 1.3rem; text-align: center;">Metodologia da ASF Advogados</h3>
+                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+                           <div>
+                                     <p style="margin-bottom: 1rem; line-height: 1.8;"><strong>1. Análise integral do caso</strong><br>Examinamos contrato, prescrição médica, negativas escritas e contexto clínico para identificar fundamentos sólidos — legais e fáticos.</p>p>
+                           </div>
+                           <div>
+                                 <p style="margin-bottom: 1rem; line-height: 1.8;"><strong>2. Estratégia multifrente</strong><br>Ação judicial rápida | Defesa administrativa | Negociação com operadora</p>p>
+                           </div>
+                           <div>
+                                 <p style="margin-bottom: 1rem; line-height: 1.8;"><strong>3. Agilidade processual</strong><br>Saúde é urgente. Utilizamos instrumentos que garantem resultado rápido: medidas cautelares, liminares e habeas corpus.</p>p>
+                           </div>
+                           <div>
+                                 <p style="margin-bottom: 1rem; line-height: 1.8;"><strong>4. Indenização integral</strong><br>Além de garantir acesso ao tratamento, perseguimos indenizações por danos morais.</p>p>
+                           </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Resultados Esperados -->
+                  <div style="background: white; padding: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                      <h3 style="color: var(--cor-secundaria); margin-bottom: 1.5rem; font-size: 1.3rem; text-align: center;">Resultado Esperado</h3>
+                      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; text-align: center; max-width: 600px; margin: 0 auto;">
+                           <div><p style="font-size: 1.1rem;">✓ Acesso imediato<br><span style="font-size: 0.95rem;">ao tratamento (via liminar)</span>span></p>p></div>
+                           <div><p style="font-size: 1.1rem;">✓ Cobertura mantida<br><span style="font-size: 0.95rem;">pelo plano ou Estado</span>span></p>p></div>
+                           <div><p style="font-size: 1.1rem;">✓ Indenização<br><span style="font-size: 0.95rem;">por dano moral</span>span></p>p></div>
+                           <div><p style="font-size: 1.1rem;">✓ Segurança jurídica<br><span style="font-size: 0.95rem;">para futuro</span>span></p>p></div>
+                      </div>
+                  </div>
+                  
+               </div>
+         </section>section>
+     </strong></strong>
+                           </div></li></li></h2>
         <!-- Sobre -->
         <section id="sobre">
                 <div class="container">
                             <h2>Sobre ASF Advogados</h2>
-                            <div class="sobre-content">
-                                            <img src="https://images.pexels.com/photos/6077983/pexels-photo-6077983.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipe de profissionais do ASF Advogados em reunião" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+
+
+                    <!-- Direito de Família -->
+                    <section id="Família">
+                        <div class="container">
+                            <h2>👨‍👩‍👧‍👦 Direito de Família</h2>
+                        
+                        <!-- Pensão Alimentícia -->
+                        <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                        <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Pensão Alimentícia</h3>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Obrigação de fornecimento de recursos para satisfação de necessidades básicas (alimentação, vestuário, habitação, saúde, educação). Regulada pelos arts. 1.694 a 1.710 do CC.</p>p>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Elementos Essenciais:</p>p>
+                        <ul style="margin-left: 2rem; margin-bottom: 1rem; line-height: 1.8;">
+                        <li>Necessidade do alimentando (comprovação de carências)</li>
+                        <li>Capacidade econômica do alimentante (renda, patrimônio, despesas)</li>
+                        <li>Vinculação legal (parentesco, filiação, casamento, união estável)</li>
+                        </ul>ul>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Fixação:</p>p>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Sem percentual fixo. Parâmetro orientador: 20-30% da renda líquida do alimentante (por filho). Ajustes conforme necessidade, capacidade e número de filhos.</p>p>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Revisão:</p>p>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Possível mediante alteração significativa de circunstâncias (art. 1.699 CC). Extinção com maioridade, emancipação, morte ou superveniência de fatos que tornem desnecessária a prestação.</p>p>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Procedimento:</p>p>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Ação de alimentos com processamento célere (CPC, arts. 1.694-1.710). Execução provisória. Bloqueio de bens via BACENJUD/SISBAJUD.</p>p>
+                        </div>
+                        
+                        <!-- Divisão de Bens -->
+                        <div style="background: white; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                        <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Divisão de Bens</h3>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Partilha patrimonial na dissolução da sociedade conjugal conforme regime matrimonial adotado. Regulada pelos arts. 1.639 a 1.688 do CC.</p>p>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Regimes Matrimoniais:</p>p>
+                        <ul style="margin-left: 2rem; margin-bottom: 1rem; line-height: 1.8;">
+                        <li><strong>Comunhão Universal:</strong> todos os bens (antes e depois) integram acervo comum. Partilha igualitária.</li>
+                        <li><strong>Comunhão Parcial:</strong> apenas bens adquiridos durante o casamento. Bens anteriores/hereditários permanecem privativos.</li>
+                        <li><strong>Separação:</strong>strong> cada cônjuge retém propriedade de seus bens. Sem partilha automática.</li>
+                        <li><strong>Participação Final nos Aquestos:</strong> cada um administra autonomamente, mas participa dos bens adquiridos.</li>
+                        </ul>ul>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Bens Privativos:</p>p>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Adquiridos antes do casamento; herança/doação; produto de bens privativos preexistentes; de uso pessoal; direitos da personalidade.</p>p>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Partilha:</p>p>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Cada cônjuge recebe equivalente a metade do acervo comum. Partilha desigual possível em circunstâncias especiais (saúde, idade, contribuição imaterial ao lar).</p>p>
+                        
+                        <p style="margin-bottom: 1rem; font-weight: 600;">Procedimento:</p>p>
+                        <p style="margin-bottom: 1rem; line-height: 1.8;">Ação ordinária cumulativa com divórcio. Homologação de acordo extrajudicial possível (CPC, arts. 725-728). Perícia para avaliação de bens em casos contenciosos.</p>p>
+                        </div>
+                        
+                        <!-- Principais Conflitos -->
+                        <div style="background: white; padding: 2rem; border-left: 4px solid var(--cor-secundaria); box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                        <h3 style="color: var(--cor-secundaria); margin-bottom: 1rem; font-size: 1.3rem;">Principais Conflitos</h3>
+                        <ul style="margin-left: 2rem; line-height: 1.8;">
+                        <li>Ocultação de patrimônio para reduzir pensão/partilha</li>
+                        <li>Imóvel de residência Famíliar: direito de uso vs. divisão</li>
+                        <li>Empresas e quotas: apuração de valor real e capacidade do devedor</li>
+                        <li>Bens digitais/criptomoedas: registro e propriedade</li>
+                        <li>Créditos alimentares em atraso vs. bens em partilha</li>
+                        </ul>ul>
+                        </div>div>
+                        
+                        </div>div>
+                    </section>section></strong></li></li></strong></strong></li></li></h2>
+                    <div class="sobre-content">
+                                            <div class="sobre-imag<img src="https://images.pexels.com/photos/6077983/pexels-photo-6077983.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipe de profissionais do ASF Advogados em reunião" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />">📸</div>div>
                                             <div class="sobre-text">
                                                                 <h3>Quem Somos</h3>
-                                                                <</p>Somos um escritório de advocacia com atuação em diversas áreas do direito, comprometidos em soluções eficazes e personalizadas para cada cliente.</</p>
-                                                                <</p><</strong>Cobertura:</</strong> Atendimento remoto em todo o Brasil e atendimento presencial em São Paulo - SP</</p>
-                                                                <</p>Com mais de uma década de experiência, nossa equipe é formada por profissionais altamente qualificados e dedicados a entregar resultados excepcionais.</</p>
-                                            </</div></div>
-                            </</div></div>
-                </</div></div>
-        </</section></section>
+                                                                <p>Somos um escritório de advocacia com atuação em diversas áreas do direito, comprometidos em soluções eficazes e personalizadas para cada cliente.</p>
+                                                                <p><strong>Cobertura:</strong> Atendimento remoto em todo o Brasil e atendimento presencial em São Paulo - SP</p>
+                                                                <p>Com mais de uma década de experiência, nossa equipe é formada por profissionais altamente qualificados e dedicados a entregar resultados excepcionais.</p>
+                                            </div>div>
+                            </div>div>
+                </div>div>
+        </section>section>
     
         <!-- Agendamento -->
         <section id="agenda">
                 <div class="container">
                             <h2>Agende sua Consulta</h2>
-                            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">Somos um escritório atuante em todo o Brasil de forma remota e presencial em São Paulo.</</p>
+                            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">Somos um escritório atuante em todo o Brasil de forma remota e presencial em São Paulo.</p>
                             <div class="scheduling-grid">
                                             <div class="schedule-card">
                                                                 <h3>🌐 Consulta Remota</h3>
-                                                                <</p>Via videoconferência para qualquer local do Brasil</</p>
-                                                                <p style="font-size: 0.85rem;">Atendimento online flexível e acessível</</p>
-                                                                <a href="https://calendly.com/asfadvogados/30min" target="_blank" class="btn btn-primary">Agende Agora</</a></a>
-                                            </</div></div>
+                                                                <p>Via videoconferência para qualquer local do Brasil</p>
+                                                                <p style="font-size: 0.85rem;">Atendimento online flexível e acessível</p>
+                                                                <a href="https://calendly.com/asfadvogados/30min" target="_blank" class="btn btn-primary">Agende Agora</a>a>
+                                            </div>div>
                                             <div class="schedule-card">
                                                                 <h3>💬 WhatsApp</h3>
-                                                                <</p>Fale conosco diretamente para agendar</</p>
-                                                                <p style="font-size: 0.85rem;">Resposta rápida e atendimento personalizado</</p>
-                                                                <a href="https://wa.me/5515991052256" target="_blank" class="btn btn-primary">WhatsApp (15) 99105-2256</</a></a>
-                                            </</div></div>
+                                                                <p>Fale conosco diretamente para agendar</p>
+                                                                <p style="font-size: 0.85rem;">Resposta rápida e atendimento personalizado</p>
+                                                                <a href="https://wa.me/5515991052256" target="_blank" class="btn btn-primary">WhatsApp (15) 99105-2256</a>a>
+                                            </div>div>
                                             <div class="schedule-card">
                                                                 <h3>🏢 Consulta Presencial</h3>
-                                                                <</p>No nosso escritório em São Paulo</</p>
-                                                                <p style="font-size: 0.85rem;">Atendimento profissional presencial</</p>
-                                                                <a href="https://wa.me/5515991052256" target="_blank" class="btn btn-primary">Agende Presencial</</a></a>
-                                            </</div></div>
-                            </</div></div>
-                </</div></div>
-        </</section></section>
+                                                                <p>No nosso escritório em São Paulo</p>
+                                                                <p style="font-size: 0.85rem;">Atendimento profissional presencial</p>
+                                                                <a href="https://wa.me/5515991052256" target="_blank" class="btn btn-primary">Agende Presencial</a>a>
+                                            </div>div>
+                            </div>div>
+                </div>div>
+        </section>section>
     
         <!-- Contato -->
         <section id="contato">
                 <div class="container">
                             <h2>Entre em Contato</h2>
                             <div class="contact-info">
-                                            <</p>
-Stop Claude                                                (15) 99105-2256
-                                            </</p>
-                                            <</p>
-                                                                    <</strong>E-mail:</</strong></strong><br>
-                                                                    <a href="mailto:contato@asfadvogados.com.br">contato@asfadvogados.com.br</</a></a>
-                                            </</p>
-                                                <</p>
-                                                                        <</strong>Localização:</</strong><br>
+                                            <p>
+                                                <strong>Telefone/WhatsApp:</strong><br>
+                                                (15) 99105-2256
+                                            </p>
+                                            <p>
+                                                                    <strong>E-mail:</strong>strong><br>
+                                                                    <a href="mailto:contato@asfadvogados.com.br">contato@asfadvogados.com.br</a>a>
+                                            </p>
+                                                <p>
+                                                                        <strong>Localização:</strong><br>
                                                 São Paulo - SP (Atendimento remoto em todo Brasil)
-                                                </</p>
-                                            <a href="https://wa.me/5515991052256" target="_blank" class="btn btn-primary">Clique para conversar via WhatsApp</</a></a>
-                            </</div></div>
-                </</div></div>
-        </</section></section>
+                                                </p>
+                                            <a href="https://wa.me/5515991052256" target="_blank" class="btn btn-primary">Clique para conversar via WhatsApp</a>a>
+                            </div>div>
+                </div>div>
+        </section>section>
     
         <!-- Footer -->
         <footer>
                     <div class="container">
-                                    <</p>&copy; 2026 ASF Advogados. Todos os direitos reservados.</</p>
-                                <</p>Atendimento em todo Brasil - Remoto e Presencial em São Paulo</</p>
-                    </</div></div>
+                                    <p>&copy; 2026 ASF Advogados. Todos os direitos reservados.</p>
+                                <p>Atendimento em todo Brasil - Remoto e Presencial em São Paulo</p>
+                    </div>div>
         </footer>
     
         <!-- WhatsApp Floating Button -->
-        <a href="https://wa.me/5515991052256" target="_blank" class="whatsapp-btn" title="Clique para conversar via WhatsApp"<img src="whatsapp-icon.png" alt="WhatsApp" style="width: 50px; height: 50px;">>💬</</a></a>
-    </</body>
-</</html></html></</p></</p>
-        </footer></</strong>
-                                                </</p>
-                                            </</p></</strong></</strong></</p></</p></</li></</li></</strong></</p></</p></</li></</li></</strong></</p></</p></</li></</li>
-                                            </</ul></</strong></</p></</p></h2></h1></</li></</li>
-    </</body>
-        </</style></</title>
-    </</head>
+        <a href="https://wa.me/5515991052256" target="_blank" class="whatsapp-btn" title="Clique para conversar via WhatsApp">
+                💬
+        </a>a>
+    </body>
+</html>html></p></p>
+        </footer></strong>
+                                                </p>
+                                            </p></strong></strong></p></p></h2></h1></li></li>
+    </body>
+        </style></title>
+    </head>
